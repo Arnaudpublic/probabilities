@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="math.js"></script> 
+	<link rel="stylesheet" type="text/css" href="math.css">
+</head>
+<body>
+	<div class="whole_page">
+		<div class="control_panel">
+			<h2>Analyzing probabilities</h2>
+			<p>Change the settings, generate the table. Then, left click to add a new starting position and right click to remove.</p>
+			<div class="Options">
+				<div class="settings_1d">
+					<div class="insert">
+						<p>Insert the number of iterations</p>
+						<input type="number" name="Number_of_changes" class="settings" value="5">
+					</div>
+					<div class="insert">
+						<p>Insert the number of boxes</p>
+						<input type="number" name="Number_of_boxes" class="settings" value="5">
+					</div>
+					<div class="insert">
+						<p>Insert the starting position</p>
+						<input type="number" name="Starting_box" class="settings" value="2" min="1">
+					</div>
+				</div>
+				<!--<div class="settings_2d">
+					<label><input type="checkbox" id="2d" name="subscribe">Mode 2D</label>
+				</div>-->
+			</div>
+			<button onclick="first_analysis()">Fonction</button>
+		</div>
+
+		<table id="output"></table>
+
+	</div>
+</body>
+</html>

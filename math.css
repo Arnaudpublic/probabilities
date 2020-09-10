@@ -1,0 +1,95 @@
+body {
+    font-family: Verdana;
+	background-image: url(majora_background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;
+	min-height: 100vh;
+}
+
+.whole_page {
+	width: 54%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5% 23% 0 23%;
+	background-color: rgb(0,0,0,0.6);
+}
+
+.control_panel {
+	width: 90%;
+	background-color: rgb(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5%;
+}
+
+.Options {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr; /*  + 1fr for 2d mode */
+	padding-bottom: 5%;
+}
+
+button {
+	height: 50px;
+	width: 100px;
+}
+
+.settings_1d {
+	display: flex;
+	flex-direction: row;
+	align-content: stretch;
+}
+
+.settings_2d {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.insert {
+	display: flex;
+	width: 33%; /* cause for some reason space-between doesn't work */
+	flex-direction: column;
+	align-items: center;
+}
+
+.option2d {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#output {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.line {
+	height: 100px;
+}
+
+.box_info {
+	border: 1px black dotted;
+}
+
+.box {
+	background-image: url(https://bit.ly/white_connect_4);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px black solid;
+}
+
+.box_text {
+	text-align: center;
+}
+
+.starting {
+	background-image: url(https://bit.ly/red_connect_4)
+}
